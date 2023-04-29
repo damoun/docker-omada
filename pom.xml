@@ -35,7 +35,7 @@
     <dependency>
       <groupId>org.springframework</groupId>
       <artifactId>spring-context</artifactId>
-      <version>5.3.18</version>
+      <version>5.3.27</version>
       <exclusions>
         <exclusion>
           <groupId>*</groupId>
@@ -112,7 +112,7 @@
     <dependency>
       <groupId>org.springframework</groupId>
       <artifactId>spring-context-support</artifactId>
-      <version>5.3.18</version>
+      <version>5.3.27</version>
       <exclusions>
         <exclusion>
           <groupId>*</groupId>
@@ -673,7 +673,7 @@
     <dependency>
       <groupId>org.springframework</groupId>
       <artifactId>spring-aop</artifactId>
-      <version>5.3.18</version>
+      <version>5.3.27</version>
       <exclusions>
         <exclusion>
           <groupId>*</groupId>
@@ -1091,7 +1091,7 @@
     <dependency>
       <groupId>org.springframework</groupId>
       <artifactId>spring-jcl</artifactId>
-      <version>5.3.18</version>
+      <version>5.3.27</version>
       <exclusions>
         <exclusion>
           <groupId>*</groupId>
@@ -1212,7 +1212,7 @@
     <dependency>
       <groupId>org.springframework</groupId>
       <artifactId>spring-beans</artifactId>
-      <version>5.3.18</version>
+      <version>5.3.27</version>
       <exclusions>
         <exclusion>
           <groupId>*</groupId>
@@ -1564,7 +1564,7 @@
     <dependency>
       <groupId>org.springframework</groupId>
       <artifactId>spring-messaging</artifactId>
-      <version>5.3.18</version>
+      <version>5.3.27</version>
       <exclusions>
         <exclusion>
           <groupId>*</groupId>
@@ -1872,7 +1872,7 @@
     <dependency>
       <groupId>org.springframework</groupId>
       <artifactId>spring-tx</artifactId>
-      <version>5.3.18</version>
+      <version>5.3.27</version>
       <exclusions>
         <exclusion>
           <groupId>*</groupId>
@@ -2213,7 +2213,7 @@
     <dependency>
       <groupId>org.springframework</groupId>
       <artifactId>spring-webmvc</artifactId>
-      <version>5.3.18</version>
+      <version>5.3.27</version>
       <exclusions>
         <exclusion>
           <groupId>*</groupId>
@@ -2246,7 +2246,7 @@
     <dependency>
       <groupId>org.springframework</groupId>
       <artifactId>spring-websocket</artifactId>
-      <version>5.3.18</version>
+      <version>5.3.27</version>
       <exclusions>
         <exclusion>
           <groupId>*</groupId>
@@ -2279,7 +2279,7 @@
     <dependency>
       <groupId>org.springframework</groupId>
       <artifactId>spring-expression</artifactId>
-      <version>5.3.18</version>
+      <version>5.3.27</version>
       <exclusions>
         <exclusion>
           <groupId>*</groupId>
