@@ -1,0 +1,15 @@
+services:
+  omada:
+    build: .
+    depends_on:
+      - mongo
+    environment:
+      - MONGO_URL=mongodb://mongo:27017/omada
+    ports:
+      - 8088:8088
+      - 8043:8043
+      - 8843:8843
+  mongo:
+    image: mongo:5.0.17
+    ports:
+      - '27017:27017'
