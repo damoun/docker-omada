@@ -1520,7 +1520,7 @@
     <dependency>
       <groupId>org.apache.tomcat.embed</groupId>
       <artifactId>tomcat-embed-core</artifactId>
-      <version>9.0.60</version>
+      <version>9.0.74</version>
       <exclusions>
         <exclusion>
           <groupId>*</groupId>
