@@ -10,6 +10,6 @@ services:
       - 8043:8043
       - 8843:8843
   mongo:
-    image: mongo:5.0.17
+    image: mongo:5.0.17@sha256:7ad08ce66a554b84a4eddedb518ad0546356b419e88e0fe324f41c01a0b4122b
     ports:
       - '27017:27017'
