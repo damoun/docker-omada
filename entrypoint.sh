@@ -16,5 +16,5 @@ java \
     -XX:+HeapDumpOnOutOfMemoryError \
     -Djava.awt.headless=true \
     -XX:HeapDumpPath=/opt/tplink/EAPController/logs/java_heapdump.hprof \
-    -cp "/usr/share/java/commons-daemon.jar:${OMADA_HOME}/lib/*:${OMADA_HOME}/properties" \
+    -cp "/usr/share/java/commons-daemon.jar:${OMADA_HOME}/dependency/*:${OMADA_HOME}/lib/*:${OMADA_HOME}/properties" \
     com.tplink.smb.omada.starter.OmadaLinuxMain start

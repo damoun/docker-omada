@@ -1,13 +1,21 @@
+FROM maven:alpine as build
+
+COPY pom.xml .
+
+RUN mvn dependency:copy-dependencies
+
 FROM openjdk:21-jdk-slim-bullseye
 
 RUN mkdir -p /opt/tplink/EAPController/logs
+RUN mkdir -p /opt/tplink/EAPController/data/keystore
+RUN mkdir /opt/tplink/EAPController/data/pdf
+RUN ln -s /dev/stdout /opt/tplink/EAPController/logs/server.log
 
+COPY --from=build target/dependency /opt/tplink/EAPController/dependency
+COPY lib /opt/tplink/EAPController/lib
 COPY entrypoint.sh /opt/tplink/EAPController/
 COPY properties /opt/tplink/EAPController/properties
-COPY lib /opt/tplink/EAPController/lib
 COPY data /opt/tplink/EAPController/data
-
-RUN ln -s /dev/stdout /opt/tplink/EAPController/logs/server.log
 
 WORKDIR /opt/tplink/EAPController/data
 
