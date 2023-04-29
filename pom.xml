@@ -90,7 +90,7 @@
     <dependency>
       <groupId>io.netty</groupId>
       <artifactId>netty-buffer</artifactId>
-      <version>4.1.75.Final</version>
+      <version>4.1.92.Final</version>
       <exclusions>
         <exclusion>
           <groupId>*</groupId>
@@ -365,7 +365,7 @@
     <dependency>
       <groupId>io.netty</groupId>
       <artifactId>netty-transport-native-kqueue</artifactId>
-      <version>4.1.75.Final</version>
+      <version>4.1.92.Final</version>
       <exclusions>
         <exclusion>
           <groupId>*</groupId>
@@ -475,7 +475,7 @@
     <dependency>
       <groupId>io.netty</groupId>
       <artifactId>netty-transport-classes-kqueue</artifactId>
-      <version>4.1.75.Final</version>
+      <version>4.1.92.Final</version>
       <exclusions>
         <exclusion>
           <groupId>*</groupId>
@@ -629,7 +629,7 @@
     <dependency>
       <groupId>io.netty</groupId>
       <artifactId>netty-resolver</artifactId>
-      <version>4.1.75.Final</version>
+      <version>4.1.92.Final</version>
       <exclusions>
         <exclusion>
           <groupId>*</groupId>
@@ -695,7 +695,7 @@
     <dependency>
       <groupId>io.netty</groupId>
       <artifactId>netty-transport-udt</artifactId>
-      <version>4.1.75.Final</version>
+      <version>4.1.92.Final</version>
       <exclusions>
         <exclusion>
           <groupId>*</groupId>
@@ -772,7 +772,7 @@
     <dependency>
       <groupId>io.netty</groupId>
       <artifactId>netty-transport-native-unix-common</artifactId>
-      <version>4.1.75.Final</version>
+      <version>4.1.92.Final</version>
       <exclusions>
         <exclusion>
           <groupId>*</groupId>
@@ -783,7 +783,7 @@
     <dependency>
       <groupId>io.netty</groupId>
       <artifactId>netty-handler</artifactId>
-      <version>4.1.75.Final</version>
+      <version>4.1.92.Final</version>
       <exclusions>
         <exclusion>
           <groupId>*</groupId>
@@ -992,7 +992,7 @@
     <dependency>
       <groupId>io.netty</groupId>
       <artifactId>netty-codec-memcache</artifactId>
-      <version>4.1.75.Final</version>
+      <version>4.1.92.Final</version>
       <exclusions>
         <exclusion>
           <groupId>*</groupId>
@@ -1025,7 +1025,7 @@
     <dependency>
       <groupId>io.netty</groupId>
       <artifactId>netty-transport-classes-epoll</artifactId>
-      <version>4.1.75.Final</version>
+      <version>4.1.92.Final</version>
       <exclusions>
         <exclusion>
           <groupId>*</groupId>
@@ -1069,7 +1069,7 @@
     <dependency>
       <groupId>io.netty</groupId>
       <artifactId>netty-codec-stomp</artifactId>
-      <version>4.1.75.Final</version>
+      <version>4.1.92.Final</version>
       <exclusions>
         <exclusion>
           <groupId>*</groupId>
@@ -1113,7 +1113,7 @@
     <dependency>
       <groupId>io.netty</groupId>
       <artifactId>netty-transport-native-epoll</artifactId>
-      <version>4.1.75.Final</version>
+      <version>4.1.92.Final</version>
       <exclusions>
         <exclusion>
           <groupId>*</groupId>
@@ -1190,7 +1190,7 @@
     <dependency>
       <groupId>io.netty</groupId>
       <artifactId>netty-codec-socks</artifactId>
-      <version>4.1.75.Final</version>
+      <version>4.1.92.Final</version>
       <exclusions>
         <exclusion>
           <groupId>*</groupId>
@@ -1223,7 +1223,7 @@
     <dependency>
       <groupId>io.netty</groupId>
       <artifactId>netty-transport</artifactId>
-      <version>4.1.75.Final</version>
+      <version>4.1.92.Final</version>
       <exclusions>
         <exclusion>
           <groupId>*</groupId>
@@ -1399,7 +1399,7 @@
     <dependency>
       <groupId>io.netty</groupId>
       <artifactId>netty-common</artifactId>
-      <version>4.1.75.Final</version>
+      <version>4.1.92.Final</version>
       <exclusions>
         <exclusion>
           <groupId>*</groupId>
@@ -1476,7 +1476,7 @@
     <dependency>
       <groupId>io.netty</groupId>
       <artifactId>netty-codec-dns</artifactId>
-      <version>4.1.75.Final</version>
+      <version>4.1.92.Final</version>
       <exclusions>
         <exclusion>
           <groupId>*</groupId>
@@ -1487,7 +1487,7 @@
     <dependency>
       <groupId>io.netty</groupId>
       <artifactId>netty-transport-native-epoll</artifactId>
-      <version>4.1.75.Final</version>
+      <version>4.1.92.Final</version>
       <exclusions>
         <exclusion>
           <groupId>*</groupId>
@@ -1498,7 +1498,7 @@
     <dependency>
       <groupId>io.netty</groupId>
       <artifactId>netty-codec-xml</artifactId>
-      <version>4.1.75.Final</version>
+      <version>4.1.92.Final</version>
       <exclusions>
         <exclusion>
           <groupId>*</groupId>
@@ -1839,7 +1839,7 @@
     <dependency>
       <groupId>io.netty</groupId>
       <artifactId>netty-codec-redis</artifactId>
-      <version>4.1.75.Final</version>
+      <version>4.1.92.Final</version>
       <exclusions>
         <exclusion>
           <groupId>*</groupId>
@@ -1949,7 +1949,7 @@
     <dependency>
       <groupId>io.netty</groupId>
       <artifactId>netty-transport-native-kqueue</artifactId>
-      <version>4.1.75.Final</version>
+      <version>4.1.92.Final</version>
       <exclusions>
         <exclusion>
           <groupId>*</groupId>
@@ -1982,7 +1982,7 @@
     <dependency>
       <groupId>io.netty</groupId>
       <artifactId>netty-codec-http2</artifactId>
-      <version>4.1.75.Final</version>
+      <version>4.1.92.Final</version>
       <exclusions>
         <exclusion>
           <groupId>*</groupId>
@@ -2026,7 +2026,7 @@
     <dependency>
       <groupId>io.netty</groupId>
       <artifactId>netty-resolver-dns</artifactId>
-      <version>4.1.75.Final</version>
+      <version>4.1.92.Final</version>
       <exclusions>
         <exclusion>
           <groupId>*</groupId>
@@ -2059,7 +2059,7 @@
     <dependency>
       <groupId>io.netty</groupId>
       <artifactId>netty-resolver-dns-classes-macos</artifactId>
-      <version>4.1.75.Final</version>
+      <version>4.1.92.Final</version>
       <exclusions>
         <exclusion>
           <groupId>*</groupId>
@@ -2114,7 +2114,7 @@
     <dependency>
       <groupId>io.netty</groupId>
       <artifactId>netty-handler-proxy</artifactId>
-      <version>4.1.75.Final</version>
+      <version>4.1.92.Final</version>
       <exclusions>
         <exclusion>
           <groupId>*</groupId>
@@ -2136,7 +2136,7 @@
     <dependency>
       <groupId>io.netty</groupId>
       <artifactId>netty-transport-rxtx</artifactId>
-      <version>4.1.75.Final</version>
+      <version>4.1.92.Final</version>
       <exclusions>
         <exclusion>
           <groupId>*</groupId>
@@ -2147,7 +2147,7 @@
     <dependency>
       <groupId>io.netty</groupId>
       <artifactId>netty-resolver-dns-native-macos</artifactId>
-      <version>4.1.75.Final</version>
+      <version>4.1.92.Final</version>
       <exclusions>
         <exclusion>
           <groupId>*</groupId>
@@ -2169,7 +2169,7 @@
     <dependency>
       <groupId>io.netty</groupId>
       <artifactId>netty-all</artifactId>
-      <version>4.1.75.Final</version>
+      <version>4.1.92.Final</version>
       <exclusions>
         <exclusion>
           <groupId>*</groupId>
@@ -2180,7 +2180,7 @@
     <dependency>
       <groupId>io.netty</groupId>
       <artifactId>netty-codec-smtp</artifactId>
-      <version>4.1.75.Final</version>
+      <version>4.1.92.Final</version>
       <exclusions>
         <exclusion>
           <groupId>*</groupId>
@@ -2268,7 +2268,7 @@
     <dependency>
       <groupId>io.netty</groupId>
       <artifactId>netty-codec-mqtt</artifactId>
-      <version>4.1.75.Final</version>
+      <version>4.1.92.Final</version>
       <exclusions>
         <exclusion>
           <groupId>*</groupId>
@@ -2312,7 +2312,7 @@
     <dependency>
       <groupId>io.netty</groupId>
       <artifactId>netty-codec</artifactId>
-      <version>4.1.75.Final</version>
+      <version>4.1.92.Final</version>
       <exclusions>
         <exclusion>
           <groupId>*</groupId>
@@ -2345,7 +2345,7 @@
     <dependency>
       <groupId>io.netty</groupId>
       <artifactId>netty-transport-sctp</artifactId>
-      <version>4.1.75.Final</version>
+      <version>4.1.92.Final</version>
       <exclusions>
         <exclusion>
           <groupId>*</groupId>
@@ -2367,7 +2367,7 @@
     <dependency>
       <groupId>io.netty</groupId>
       <artifactId>netty-resolver-dns-native-macos</artifactId>
-      <version>4.1.75.Final</version>
+      <version>4.1.92.Final</version>
       <exclusions>
         <exclusion>
           <groupId>*</groupId>
