@@ -1,10 +1,10 @@
-FROM maven:alpine as build
+FROM maven:alpine@sha256:16691dc7e18e5311ee7ae38b40dcf98ee1cfe4a487fdd0e57bfef76a0415034a as build
 
 COPY pom.xml .
 
 RUN mvn dependency:copy-dependencies
 
-FROM openjdk:21-jdk-slim-bullseye
+FROM openjdk:21-jdk-slim-bullseye@sha256:e0077bff697f2647fab417ed80f7cc0ae451856e3a821568ff30c7b7caaaec74
 
 RUN mkdir -p /opt/tplink/EAPController/logs
 RUN mkdir -p /opt/tplink/EAPController/data/keystore
