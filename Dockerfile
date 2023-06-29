@@ -11,8 +11,8 @@ RUN mkdir -p /opt/tplink/EAPController/data/keystore
 RUN mkdir /opt/tplink/EAPController/data/pdf
 RUN ln -s /dev/stdout /opt/tplink/EAPController/logs/server.log
 
-COPY --from=build target/dependency /opt/tplink/EAPController/dependency
 COPY lib /opt/tplink/EAPController/lib
+COPY --from=build target/dependency /opt/tplink/EAPController/lib
 COPY entrypoint.sh /opt/tplink/EAPController/
 COPY properties /opt/tplink/EAPController/properties
 COPY data /opt/tplink/EAPController/data
