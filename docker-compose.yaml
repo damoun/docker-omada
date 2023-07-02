@@ -5,10 +5,12 @@ services:
       - mongo
     environment:
       - MONGO_URL=mongodb://mongo:27017/omada
+      - OMADA_PORT_DISCOVERY=30001
     ports:
       - 8088:8088
       - 8043:8043
       - 8843:8843
+      - 30001:30001/udp
   mongo:
     image: mongo:5.0.17
     ports:
