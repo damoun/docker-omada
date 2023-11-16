@@ -5,7 +5,7 @@ COPY pom.xml .
 RUN mvn dependency:copy-dependencies
 RUN mvn dependency:tree
 
-FROM openjdk:21-jdk-slim-bullseye@sha256:e0077bff697f2647fab417ed80f7cc0ae451856e3a821568ff30c7b7caaaec74
+FROM openjdk:22-jdk-slim-bullseye@sha256:32dcd71705a0e74b3b83d93294afb70c6eb57cf694ccb8dd558724d744bc098d
 
 RUN mkdir -p /opt/tplink/EAPController/logs
 RUN mkdir -p /opt/tplink/EAPController/data/keystore
