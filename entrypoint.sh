@@ -12,6 +12,8 @@ echo "port.adopt.v1=${OMADA_PORT_ADOPT_V1}" >> "${OMADA_HOME}/properties/omada.p
 echo "port.upgrade.v1=${OMADA_PORT_UPGRADE_V1}" >> "${OMADA_HOME}/properties/omada.properties"
 echo "port.manager.v1=${OMADA_PORT_MANAGER_V1}" >> "${OMADA_HOME}/properties/omada.properties"
 echo "port.manager.v2=${OMADA_PORT_MANAGER_V2}" >> "${OMADA_HOME}/properties/omada.properties"
+echo "port.rtty=${OMADA_PORT_RTTY}" >> "${OMADA_HOME}/properties/omada.properties"
+echo "port.app.discovery=${OMADA_PORT_APP_DISCOVERY}" >> "${OMADA_HOME}/properties/omada.properties"
 
 java \
     -server \

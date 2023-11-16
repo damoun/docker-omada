@@ -10,6 +10,7 @@ FROM openjdk:21-jdk-slim-bullseye@sha256:e0077bff697f2647fab417ed80f7cc0ae451856
 RUN mkdir -p /opt/tplink/EAPController/logs
 RUN mkdir -p /opt/tplink/EAPController/data/keystore
 RUN mkdir /opt/tplink/EAPController/data/pdf
+RUN mkdir /opt/tplink/EAPController/data/autobackup
 RUN ln -s /dev/stdout /opt/tplink/EAPController/logs/server.log
 
 COPY lib /opt/tplink/EAPController/lib
@@ -20,7 +21,7 @@ COPY data /opt/tplink/EAPController/data
 
 WORKDIR /opt/tplink/EAPController/data
 
-EXPOSE 29811/tcp 29812/tcp 29813/tcp 29814/tcp 8088/tcp 8043/tcp 8843/tcp 29810/udp 27001/udp
+EXPOSE 29811/tcp 29812/tcp 29813/tcp 29814/tcp 8088/tcp 8043/tcp 8843/tcp 29810/udp 27001/udp 29816/tcp 27001/udp
 
 ENV OMADA_MANAGE_HTTP_PORT 8088
 ENV OMADA_MANAGE_HTTPS_PORT 8043
@@ -31,5 +32,7 @@ ENV OMADA_PORT_ADOPT_V1 29812
 ENV OMADA_PORT_UPGRADE_V1 29813
 ENV OMADA_PORT_MANAGER_V1 29811
 ENV OMADA_PORT_MANAGER_V2 29814
+ENV OMADA_PORT_RTTY 29816
+ENV OMADA_PORT_APP_DISCOVERY 27001
 
 CMD [ "/opt/tplink/EAPController/entrypoint.sh" ]

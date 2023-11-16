@@ -6,10 +6,21 @@
 
   <groupId>com.tplink.smb.omada</groupId>
   <artifactId>omada</artifactId>
-  <version>5.9.31</version>
+  <version>5.12.7</version>
   <name>omada</name>
 
   <dependencies>
+      <dependency>
+      <groupId>org.opensaml</groupId>
+      <artifactId>opensaml-messaging-api</artifactId>
+      <version>3.3.0</version>
+      <exclusions>
+        <exclusion>
+          <groupId>*</groupId>
+          <artifactId>*</artifactId>
+        </exclusion>
+      </exclusions>
+    </dependency>
     <dependency>
       <groupId>org.springframework.boot</groupId>
       <artifactId>spring-boot-starter-quartz</artifactId>
@@ -25,17 +36,6 @@
       <groupId>org.apache.xmlgraphics</groupId>
       <artifactId>fop</artifactId>
       <version>2.6</version>
-      <exclusions>
-        <exclusion>
-          <groupId>*</groupId>
-          <artifactId>*</artifactId>
-        </exclusion>
-      </exclusions>
-    </dependency>
-    <dependency>
-      <groupId>org.springframework</groupId>
-      <artifactId>spring-context</artifactId>
-      <version>5.3.18</version>
       <exclusions>
         <exclusion>
           <groupId>*</groupId>
@@ -88,6 +88,17 @@
       </exclusions>
     </dependency>
     <dependency>
+      <groupId>com.github.xiaoymin</groupId>
+      <artifactId>knife4j-openapi3-spring-boot-starter</artifactId>
+      <version>4.1.0</version>
+      <exclusions>
+        <exclusion>
+          <groupId>*</groupId>
+          <artifactId>*</artifactId>
+        </exclusion>
+      </exclusions>
+    </dependency>
+    <dependency>
       <groupId>io.netty</groupId>
       <artifactId>netty-buffer</artifactId>
       <version>4.1.75.Final</version>
@@ -110,9 +121,20 @@
       </exclusions>
     </dependency>
     <dependency>
-      <groupId>org.springframework</groupId>
-      <artifactId>spring-context-support</artifactId>
-      <version>5.3.18</version>
+      <groupId>jakarta.xml.bind</groupId>
+      <artifactId>jakarta.xml.bind-api</artifactId>
+      <version>2.3.3</version>
+      <exclusions>
+        <exclusion>
+          <groupId>*</groupId>
+          <artifactId>*</artifactId>
+        </exclusion>
+      </exclusions>
+    </dependency>
+    <dependency>
+      <groupId>io.swagger.core.v3</groupId>
+      <artifactId>swagger-core</artifactId>
+      <version>2.2.8</version>
       <exclusions>
         <exclusion>
           <groupId>*</groupId>
@@ -165,6 +187,17 @@
       </exclusions>
     </dependency>
     <dependency>
+      <groupId>commons-io</groupId>
+      <artifactId>commons-io</artifactId>
+      <version>2.8.0</version>
+      <exclusions>
+        <exclusion>
+          <groupId>*</groupId>
+          <artifactId>*</artifactId>
+        </exclusion>
+      </exclusions>
+    </dependency>
+    <dependency>
       <groupId>io.prometheus</groupId>
       <artifactId>simpleclient</artifactId>
       <version>0.12.0</version>
@@ -198,42 +231,9 @@
       </exclusions>
     </dependency>
     <dependency>
-      <groupId>org.owasp.encoder</groupId>
-      <artifactId>encoder</artifactId>
-      <version>1.2.3</version>
-      <exclusions>
-        <exclusion>
-          <groupId>*</groupId>
-          <artifactId>*</artifactId>
-        </exclusion>
-      </exclusions>
-    </dependency>
-    <dependency>
       <groupId>com.hierynomus</groupId>
       <artifactId>sshj</artifactId>
       <version>0.33.0</version>
-      <exclusions>
-        <exclusion>
-          <groupId>*</groupId>
-          <artifactId>*</artifactId>
-        </exclusion>
-      </exclusions>
-    </dependency>
-    <dependency>
-      <groupId>cn.hutool</groupId>
-      <artifactId>hutool-core</artifactId>
-      <version>5.3.8</version>
-      <exclusions>
-        <exclusion>
-          <groupId>*</groupId>
-          <artifactId>*</artifactId>
-        </exclusion>
-      </exclusions>
-    </dependency>
-    <dependency>
-      <groupId>org.apache.httpcomponents</groupId>
-      <artifactId>httpcore</artifactId>
-      <version>4.4.15</version>
       <exclusions>
         <exclusion>
           <groupId>*</groupId>
@@ -253,31 +253,20 @@
       </exclusions>
     </dependency>
     <dependency>
-      <groupId>com.google.protobuf</groupId>
-      <artifactId>protobuf-java</artifactId>
-      <version>3.11.0</version>
-      <exclusions>
-        <exclusion>
-          <groupId>*</groupId>
-          <artifactId>*</artifactId>
-        </exclusion>
-      </exclusions>
-    </dependency>
-    <dependency>
-      <groupId>org.slf4j</groupId>
-      <artifactId>slf4j-api</artifactId>
-      <version>1.7.36</version>
-      <exclusions>
-        <exclusion>
-          <groupId>*</groupId>
-          <artifactId>*</artifactId>
-        </exclusion>
-      </exclusions>
-    </dependency>
-    <dependency>
       <groupId>org.bouncycastle</groupId>
       <artifactId>bcprov-jdk15on</artifactId>
       <version>1.68</version>
+      <exclusions>
+        <exclusion>
+          <groupId>*</groupId>
+          <artifactId>*</artifactId>
+        </exclusion>
+      </exclusions>
+    </dependency>
+    <dependency>
+      <groupId>com.fasterxml.woodstox</groupId>
+      <artifactId>woodstox-core</artifactId>
+      <version>5.0.3</version>
       <exclusions>
         <exclusion>
           <groupId>*</groupId>
@@ -341,9 +330,9 @@
       </exclusions>
     </dependency>
     <dependency>
-      <groupId>org.apache.httpcomponents</groupId>
-      <artifactId>httpcore-nio</artifactId>
-      <version>4.4.15</version>
+      <groupId>net.minidev</groupId>
+      <artifactId>json-smart</artifactId>
+      <version>2.4.8</version>
       <exclusions>
         <exclusion>
           <groupId>*</groupId>
@@ -352,9 +341,9 @@
       </exclusions>
     </dependency>
     <dependency>
-      <groupId>net.minidev</groupId>
-      <artifactId>json-smart</artifactId>
-      <version>2.4.8</version>
+      <groupId>io.netty</groupId>
+      <artifactId>netty-transport-native-kqueue</artifactId>
+      <version>4.1.75.Final</version>
       <exclusions>
         <exclusion>
           <groupId>*</groupId>
@@ -429,9 +418,9 @@
       </exclusions>
     </dependency>
     <dependency>
-      <groupId>org.apache.logging.log4j</groupId>
-      <artifactId>log4j-api</artifactId>
-      <version>2.17.1</version>
+      <groupId>org.apache.xmlgraphics</groupId>
+      <artifactId>batik-gvt</artifactId>
+      <version>1.14</version>
       <exclusions>
         <exclusion>
           <groupId>*</groupId>
@@ -440,9 +429,20 @@
       </exclusions>
     </dependency>
     <dependency>
-      <groupId>org.apache.xmlgraphics</groupId>
-      <artifactId>batik-gvt</artifactId>
-      <version>1.14</version>
+      <groupId>org.webjars</groupId>
+      <artifactId>swagger-ui</artifactId>
+      <version>4.17.1</version>
+      <exclusions>
+        <exclusion>
+          <groupId>*</groupId>
+          <artifactId>*</artifactId>
+        </exclusion>
+      </exclusions>
+    </dependency>
+    <dependency>
+      <groupId>io.swagger.core.v3</groupId>
+      <artifactId>swagger-models</artifactId>
+      <version>2.2.8</version>
       <exclusions>
         <exclusion>
           <groupId>*</groupId>
@@ -484,9 +484,20 @@
       </exclusions>
     </dependency>
     <dependency>
-      <groupId>org.springframework</groupId>
-      <artifactId>spring-core</artifactId>
-      <version>5.3.18</version>
+      <groupId>org.opensaml</groupId>
+      <artifactId>opensaml-storage-api</artifactId>
+      <version>3.3.0</version>
+      <exclusions>
+        <exclusion>
+          <groupId>*</groupId>
+          <artifactId>*</artifactId>
+        </exclusion>
+      </exclusions>
+    </dependency>
+    <dependency>
+      <groupId>org.opensaml</groupId>
+      <artifactId>opensaml-soap-api</artifactId>
+      <version>3.3.0</version>
       <exclusions>
         <exclusion>
           <groupId>*</groupId>
@@ -509,17 +520,6 @@
       <groupId>org.springframework.boot</groupId>
       <artifactId>spring-boot-configuration-processor</artifactId>
       <version>2.6.6</version>
-      <exclusions>
-        <exclusion>
-          <groupId>*</groupId>
-          <artifactId>*</artifactId>
-        </exclusion>
-      </exclusions>
-    </dependency>
-    <dependency>
-      <groupId>org.springframework</groupId>
-      <artifactId>spring-web</artifactId>
-      <version>5.3.18</version>
       <exclusions>
         <exclusion>
           <groupId>*</groupId>
@@ -561,31 +561,9 @@
       </exclusions>
     </dependency>
     <dependency>
-      <groupId>com.alibaba.fastjson2</groupId>
-      <artifactId>fastjson2-extension</artifactId>
-      <version>2.0.20.graal</version>
-      <exclusions>
-        <exclusion>
-          <groupId>*</groupId>
-          <artifactId>*</artifactId>
-        </exclusion>
-      </exclusions>
-    </dependency>
-    <dependency>
-      <groupId>org.apache.tomcat</groupId>
-      <artifactId>tomcat-annotations-api</artifactId>
-      <version>9.0.60</version>
-      <exclusions>
-        <exclusion>
-          <groupId>*</groupId>
-          <artifactId>*</artifactId>
-        </exclusion>
-      </exclusions>
-    </dependency>
-    <dependency>
-      <groupId>org.apache.pdfbox</groupId>
-      <artifactId>fontbox</artifactId>
-      <version>2.0.19</version>
+      <groupId>org.opensaml</groupId>
+      <artifactId>opensaml-profile-api</artifactId>
+      <version>3.3.0</version>
       <exclusions>
         <exclusion>
           <groupId>*</groupId>
@@ -616,9 +594,31 @@
       </exclusions>
     </dependency>
     <dependency>
+      <groupId>org.javassist</groupId>
+      <artifactId>javassist</artifactId>
+      <version>3.25.0-GA</version>
+      <exclusions>
+        <exclusion>
+          <groupId>*</groupId>
+          <artifactId>*</artifactId>
+        </exclusion>
+      </exclusions>
+    </dependency>
+    <dependency>
       <groupId>io.netty</groupId>
       <artifactId>netty-resolver</artifactId>
       <version>4.1.75.Final</version>
+      <exclusions>
+        <exclusion>
+          <groupId>*</groupId>
+          <artifactId>*</artifactId>
+        </exclusion>
+      </exclusions>
+    </dependency>
+    <dependency>
+      <groupId>com.github.xiaoymin</groupId>
+      <artifactId>knife4j-core</artifactId>
+      <version>4.1.0</version>
       <exclusions>
         <exclusion>
           <groupId>*</groupId>
@@ -660,9 +660,9 @@
       </exclusions>
     </dependency>
     <dependency>
-      <groupId>org.springframework</groupId>
-      <artifactId>spring-aop</artifactId>
-      <version>5.3.18</version>
+      <groupId>joda-time</groupId>
+      <artifactId>joda-time</artifactId>
+      <version>2.9</version>
       <exclusions>
         <exclusion>
           <groupId>*</groupId>
@@ -737,9 +737,9 @@
       </exclusions>
     </dependency>
     <dependency>
-      <groupId>org.apache.tomcat.embed</groupId>
-      <artifactId>tomcat-embed-el</artifactId>
-      <version>9.0.60</version>
+      <groupId>org.opensaml</groupId>
+      <artifactId>opensaml-saml-api</artifactId>
+      <version>3.3.0</version>
       <exclusions>
         <exclusion>
           <groupId>*</groupId>
@@ -792,17 +792,6 @@
       </exclusions>
     </dependency>
     <dependency>
-      <groupId>org.apache.httpcomponents</groupId>
-      <artifactId>httpclient</artifactId>
-      <version>4.5.7</version>
-      <exclusions>
-        <exclusion>
-          <groupId>*</groupId>
-          <artifactId>*</artifactId>
-        </exclusion>
-      </exclusions>
-    </dependency>
-    <dependency>
       <groupId>net.minidev</groupId>
       <artifactId>accessors-smart</artifactId>
       <version>2.4.8</version>
@@ -828,17 +817,6 @@
       <groupId>io.micrometer</groupId>
       <artifactId>micrometer-core</artifactId>
       <version>1.8.4</version>
-      <exclusions>
-        <exclusion>
-          <groupId>*</groupId>
-          <artifactId>*</artifactId>
-        </exclusion>
-      </exclusions>
-    </dependency>
-    <dependency>
-      <groupId>org.apache.logging.log4j</groupId>
-      <artifactId>log4j-core</artifactId>
-      <version>2.17.1</version>
       <exclusions>
         <exclusion>
           <groupId>*</groupId>
@@ -880,42 +858,9 @@
       </exclusions>
     </dependency>
     <dependency>
-      <groupId>org.apache.tomcat.embed</groupId>
-      <artifactId>tomcat-embed-jasper</artifactId>
-      <version>9.0.60</version>
-      <exclusions>
-        <exclusion>
-          <groupId>*</groupId>
-          <artifactId>*</artifactId>
-        </exclusion>
-      </exclusions>
-    </dependency>
-    <dependency>
-      <groupId>com.google.protobuf</groupId>
-      <artifactId>protobuf-java-util</artifactId>
-      <version>3.11.0</version>
-      <exclusions>
-        <exclusion>
-          <groupId>*</groupId>
-          <artifactId>*</artifactId>
-        </exclusion>
-      </exclusions>
-    </dependency>
-    <dependency>
       <groupId>org.apache.shiro</groupId>
       <artifactId>shiro-core</artifactId>
       <version>1.11.0</version>
-      <exclusions>
-        <exclusion>
-          <groupId>*</groupId>
-          <artifactId>*</artifactId>
-        </exclusion>
-      </exclusions>
-    </dependency>
-    <dependency>
-      <groupId>org.apache.logging.log4j</groupId>
-      <artifactId>log4j-slf4j-impl</artifactId>
-      <version>2.17.1</version>
       <exclusions>
         <exclusion>
           <groupId>*</groupId>
@@ -968,9 +913,9 @@
       </exclusions>
     </dependency>
     <dependency>
-      <groupId>com.google.guava</groupId>
-      <artifactId>failureaccess</artifactId>
-      <version>1.0.1</version>
+      <groupId>io.netty</groupId>
+      <artifactId>netty-codec-memcache</artifactId>
+      <version>4.1.75.Final</version>
       <exclusions>
         <exclusion>
           <groupId>*</groupId>
@@ -979,9 +924,20 @@
       </exclusions>
     </dependency>
     <dependency>
-      <groupId>io.netty</groupId>
-      <artifactId>netty-codec-memcache</artifactId>
-      <version>4.1.75.Final</version>
+      <groupId>org.cryptacular</groupId>
+      <artifactId>cryptacular</artifactId>
+      <version>1.1.1</version>
+      <exclusions>
+        <exclusion>
+          <groupId>*</groupId>
+          <artifactId>*</artifactId>
+        </exclusion>
+      </exclusions>
+    </dependency>
+    <dependency>
+      <groupId>com.github.xiaoymin</groupId>
+      <artifactId>knife4j-openapi3-ui</artifactId>
+      <version>4.1.0</version>
       <exclusions>
         <exclusion>
           <groupId>*</groupId>
@@ -1034,17 +990,6 @@
       </exclusions>
     </dependency>
     <dependency>
-      <groupId>org.hdrhistogram</groupId>
-      <artifactId>HdrHistogram</artifactId>
-      <version>2.1.12</version>
-      <exclusions>
-        <exclusion>
-          <groupId>*</groupId>
-          <artifactId>*</artifactId>
-        </exclusion>
-      </exclusions>
-    </dependency>
-    <dependency>
       <groupId>org.apache.shiro</groupId>
       <artifactId>shiro-lang</artifactId>
       <version>1.11.0</version>
@@ -1078,9 +1023,9 @@
       </exclusions>
     </dependency>
     <dependency>
-      <groupId>org.springframework</groupId>
-      <artifactId>spring-jcl</artifactId>
-      <version>5.3.18</version>
+      <groupId>io.jsonwebtoken</groupId>
+      <artifactId>jjwt</artifactId>
+      <version>0.9.1</version>
       <exclusions>
         <exclusion>
           <groupId>*</groupId>
@@ -1089,9 +1034,9 @@
       </exclusions>
     </dependency>
     <dependency>
-      <groupId>io.jsonwebtoken</groupId>
-      <artifactId>jjwt</artifactId>
-      <version>0.9.1</version>
+      <groupId>io.netty</groupId>
+      <artifactId>netty-transport-native-epoll</artifactId>
+      <version>4.1.75.Final</version>
       <exclusions>
         <exclusion>
           <groupId>*</groupId>
@@ -1122,9 +1067,9 @@
       </exclusions>
     </dependency>
     <dependency>
-      <groupId>org.apache.logging.log4j</groupId>
-      <artifactId>log4j-jul</artifactId>
-      <version>2.17.1</version>
+      <groupId>org.opensaml</groupId>
+      <artifactId>opensaml-security-impl</artifactId>
+      <version>3.3.0</version>
       <exclusions>
         <exclusion>
           <groupId>*</groupId>
@@ -1188,9 +1133,9 @@
       </exclusions>
     </dependency>
     <dependency>
-      <groupId>org.springframework</groupId>
-      <artifactId>spring-beans</artifactId>
-      <version>5.3.18</version>
+      <groupId>org.apache.santuario</groupId>
+      <artifactId>xmlsec</artifactId>
+      <version>2.1.4</version>
       <exclusions>
         <exclusion>
           <groupId>*</groupId>
@@ -1213,17 +1158,6 @@
       <groupId>org.aspectj</groupId>
       <artifactId>aspectjweaver</artifactId>
       <version>1.9.7</version>
-      <exclusions>
-        <exclusion>
-          <groupId>*</groupId>
-          <artifactId>*</artifactId>
-        </exclusion>
-      </exclusions>
-    </dependency>
-    <dependency>
-      <groupId>com.fasterxml.jackson.core</groupId>
-      <artifactId>jackson-databind</artifactId>
-      <version>2.13.2.2</version>
       <exclusions>
         <exclusion>
           <groupId>*</groupId>
@@ -1265,9 +1199,31 @@
       </exclusions>
     </dependency>
     <dependency>
+      <groupId>org.webjars</groupId>
+      <artifactId>webjars-locator-core</artifactId>
+      <version>0.48</version>
+      <exclusions>
+        <exclusion>
+          <groupId>*</groupId>
+          <artifactId>*</artifactId>
+        </exclusion>
+      </exclusions>
+    </dependency>
+    <dependency>
       <groupId>org.apache.xmlgraphics</groupId>
       <artifactId>batik-util</artifactId>
       <version>1.14</version>
+      <exclusions>
+        <exclusion>
+          <groupId>*</groupId>
+          <artifactId>*</artifactId>
+        </exclusion>
+      </exclusions>
+    </dependency>
+    <dependency>
+      <groupId>org.apache.xmlgraphics</groupId>
+      <artifactId>xmlgraphics-commons</artifactId>
+      <version>2.6</version>
       <exclusions>
         <exclusion>
           <groupId>*</groupId>
@@ -1323,6 +1279,17 @@
       <groupId>org.latencyutils</groupId>
       <artifactId>LatencyUtils</artifactId>
       <version>2.0.3</version>
+      <exclusions>
+        <exclusion>
+          <groupId>*</groupId>
+          <artifactId>*</artifactId>
+        </exclusion>
+      </exclusions>
+    </dependency>
+    <dependency>
+      <groupId>org.codehaus.woodstox</groupId>
+      <artifactId>stax2-api</artifactId>
+      <version>3.1.4</version>
       <exclusions>
         <exclusion>
           <groupId>*</groupId>
@@ -1419,17 +1386,6 @@
       </exclusions>
     </dependency>
     <dependency>
-      <groupId>org.javassist</groupId>
-      <artifactId>javassist</artifactId>
-      <version>3.21.0-GA</version>
-      <exclusions>
-        <exclusion>
-          <groupId>*</groupId>
-          <artifactId>*</artifactId>
-        </exclusion>
-      </exclusions>
-    </dependency>
-    <dependency>
       <groupId>org.springframework.boot</groupId>
       <artifactId>spring-boot</artifactId>
       <version>2.6.6</version>
@@ -1496,28 +1452,6 @@
       </exclusions>
     </dependency>
     <dependency>
-      <groupId>org.apache.tomcat.embed</groupId>
-      <artifactId>tomcat-embed-core</artifactId>
-      <version>9.0.60</version>
-      <exclusions>
-        <exclusion>
-          <groupId>*</groupId>
-          <artifactId>*</artifactId>
-        </exclusion>
-      </exclusions>
-    </dependency>
-    <dependency>
-      <groupId>io.reactivex.rxjava2</groupId>
-      <artifactId>rxjava</artifactId>
-      <version>2.2.18</version>
-      <exclusions>
-        <exclusion>
-          <groupId>*</groupId>
-          <artifactId>*</artifactId>
-        </exclusion>
-      </exclusions>
-    </dependency>
-    <dependency>
       <groupId>javax.validation</groupId>
       <artifactId>validation-api</artifactId>
       <version>2.0.1.Final</version>
@@ -1540,20 +1474,9 @@
       </exclusions>
     </dependency>
     <dependency>
-      <groupId>org.springframework</groupId>
-      <artifactId>spring-messaging</artifactId>
-      <version>5.3.18</version>
-      <exclusions>
-        <exclusion>
-          <groupId>*</groupId>
-          <artifactId>*</artifactId>
-        </exclusion>
-      </exclusions>
-    </dependency>
-    <dependency>
-      <groupId>com.alibaba.fastjson2</groupId>
-      <artifactId>fastjson2</artifactId>
-      <version>2.0.20.graal</version>
+      <groupId>jakarta.activation</groupId>
+      <artifactId>jakarta.activation-api</artifactId>
+      <version>1.2.2</version>
       <exclusions>
         <exclusion>
           <groupId>*</groupId>
@@ -1617,17 +1540,6 @@
       </exclusions>
     </dependency>
     <dependency>
-      <groupId>org.slf4j</groupId>
-      <artifactId>jul-to-slf4j</artifactId>
-      <version>1.7.36</version>
-      <exclusions>
-        <exclusion>
-          <groupId>*</groupId>
-          <artifactId>*</artifactId>
-        </exclusion>
-      </exclusions>
-    </dependency>
-    <dependency>
       <groupId>org.apache.xmlgraphics</groupId>
       <artifactId>batik-script</artifactId>
       <version>1.14</version>
@@ -1639,20 +1551,9 @@
       </exclusions>
     </dependency>
     <dependency>
-      <groupId>ognl</groupId>
-      <artifactId>ognl</artifactId>
-      <version>3.1.26</version>
-      <exclusions>
-        <exclusion>
-          <groupId>*</groupId>
-          <artifactId>*</artifactId>
-        </exclusion>
-      </exclusions>
-    </dependency>
-    <dependency>
-      <groupId>commons-collections</groupId>
-      <artifactId>commons-collections</artifactId>
-      <version>3.2.2</version>
+      <groupId>org.opensaml</groupId>
+      <artifactId>opensaml-core</artifactId>
+      <version>3.3.0</version>
       <exclusions>
         <exclusion>
           <groupId>*</groupId>
@@ -1683,31 +1584,9 @@
       </exclusions>
     </dependency>
     <dependency>
-      <groupId>commons-codec</groupId>
-      <artifactId>commons-codec</artifactId>
-      <version>1.15</version>
-      <exclusions>
-        <exclusion>
-          <groupId>*</groupId>
-          <artifactId>*</artifactId>
-        </exclusion>
-      </exclusions>
-    </dependency>
-    <dependency>
       <groupId>com.fasterxml.jackson.core</groupId>
       <artifactId>jackson-annotations</artifactId>
       <version>2.13.2</version>
-      <exclusions>
-        <exclusion>
-          <groupId>*</groupId>
-          <artifactId>*</artifactId>
-        </exclusion>
-      </exclusions>
-    </dependency>
-    <dependency>
-      <groupId>org.apache.tomcat.embed</groupId>
-      <artifactId>tomcat-embed-websocket</artifactId>
-      <version>9.0.60</version>
       <exclusions>
         <exclusion>
           <groupId>*</groupId>
@@ -1727,17 +1606,6 @@
       </exclusions>
     </dependency>
     <dependency>
-      <groupId>org.apache.httpcomponents</groupId>
-      <artifactId>httpasyncclient</artifactId>
-      <version>4.1.5</version>
-      <exclusions>
-        <exclusion>
-          <groupId>*</groupId>
-          <artifactId>*</artifactId>
-        </exclusion>
-      </exclusions>
-    </dependency>
-    <dependency>
       <groupId>org.apache.xmlgraphics</groupId>
       <artifactId>fop-util</artifactId>
       <version>2.6</version>
@@ -1749,9 +1617,9 @@
       </exclusions>
     </dependency>
     <dependency>
-      <groupId>com.alibaba</groupId>
-      <artifactId>fastjson</artifactId>
-      <version>2.0.20.graal</version>
+      <groupId>org.opensaml</groupId>
+      <artifactId>opensaml-xmlsec-impl</artifactId>
+      <version>3.3.0</version>
       <exclusions>
         <exclusion>
           <groupId>*</groupId>
@@ -1763,17 +1631,6 @@
       <groupId>org.apache.xmlgraphics</groupId>
       <artifactId>fop-core</artifactId>
       <version>2.6</version>
-      <exclusions>
-        <exclusion>
-          <groupId>*</groupId>
-          <artifactId>*</artifactId>
-        </exclusion>
-      </exclusions>
-    </dependency>
-    <dependency>
-      <groupId>joda-time</groupId>
-      <artifactId>joda-time</artifactId>
-      <version>2.5</version>
       <exclusions>
         <exclusion>
           <groupId>*</groupId>
@@ -1840,17 +1697,6 @@
       <groupId>com.lmax</groupId>
       <artifactId>disruptor</artifactId>
       <version>3.4.4</version>
-      <exclusions>
-        <exclusion>
-          <groupId>*</groupId>
-          <artifactId>*</artifactId>
-        </exclusion>
-      </exclusions>
-    </dependency>
-    <dependency>
-      <groupId>org.springframework</groupId>
-      <artifactId>spring-tx</artifactId>
-      <version>5.3.18</version>
       <exclusions>
         <exclusion>
           <groupId>*</groupId>
@@ -1969,9 +1815,9 @@
       </exclusions>
     </dependency>
     <dependency>
-      <groupId>stax</groupId>
-      <artifactId>stax-api</artifactId>
-      <version>1.0.1</version>
+      <groupId>org.opensaml</groupId>
+      <artifactId>opensaml-xmlsec-api</artifactId>
+      <version>3.3.0</version>
       <exclusions>
         <exclusion>
           <groupId>*</groupId>
@@ -1994,6 +1840,17 @@
       <groupId>com.jcraft</groupId>
       <artifactId>jsch</artifactId>
       <version>0.1.55</version>
+      <exclusions>
+        <exclusion>
+          <groupId>*</groupId>
+          <artifactId>*</artifactId>
+        </exclusion>
+      </exclusions>
+    </dependency>
+    <dependency>
+      <groupId>io.swagger.core.v3</groupId>
+      <artifactId>swagger-annotations</artifactId>
+      <version>2.2.7</version>
       <exclusions>
         <exclusion>
           <groupId>*</groupId>
@@ -2068,6 +1925,17 @@
       </exclusions>
     </dependency>
     <dependency>
+      <groupId>com.fasterxml.jackson.dataformat</groupId>
+      <artifactId>jackson-dataformat-yaml</artifactId>
+      <version>2.13.2</version>
+      <exclusions>
+        <exclusion>
+          <groupId>*</groupId>
+          <artifactId>*</artifactId>
+        </exclusion>
+      </exclusions>
+    </dependency>
+    <dependency>
       <groupId>com.thoughtworks.qdox</groupId>
       <artifactId>qdox</artifactId>
       <version>1.12</version>
@@ -2123,6 +1991,39 @@
       </exclusions>
     </dependency>
     <dependency>
+      <groupId>org.opensaml</groupId>
+      <artifactId>opensaml-security-api</artifactId>
+      <version>3.3.0</version>
+      <exclusions>
+        <exclusion>
+          <groupId>*</groupId>
+          <artifactId>*</artifactId>
+        </exclusion>
+      </exclusions>
+    </dependency>
+    <dependency>
+      <groupId>org.opensaml</groupId>
+      <artifactId>opensaml-saml-impl</artifactId>
+      <version>3.3.0</version>
+      <exclusions>
+        <exclusion>
+          <groupId>*</groupId>
+          <artifactId>*</artifactId>
+        </exclusion>
+      </exclusions>
+    </dependency>
+    <dependency>
+      <groupId>io.netty</groupId>
+      <artifactId>netty-resolver-dns-native-macos</artifactId>
+      <version>4.1.75.Final</version>
+      <exclusions>
+        <exclusion>
+          <groupId>*</groupId>
+          <artifactId>*</artifactId>
+        </exclusion>
+      </exclusions>
+    </dependency>
+    <dependency>
       <groupId>org.attoparser</groupId>
       <artifactId>attoparser</artifactId>
       <version>2.0.5.RELEASE</version>
@@ -2156,6 +2057,17 @@
       </exclusions>
     </dependency>
     <dependency>
+      <groupId>net.shibboleth.utilities</groupId>
+      <artifactId>java-support</artifactId>
+      <version>7.3.0</version>
+      <exclusions>
+        <exclusion>
+          <groupId>*</groupId>
+          <artifactId>*</artifactId>
+        </exclusion>
+      </exclusions>
+    </dependency>
+    <dependency>
       <groupId>commons-net</groupId>
       <artifactId>commons-net</artifactId>
       <version>3.6</version>
@@ -2170,17 +2082,6 @@
       <groupId>com.sun.mail</groupId>
       <artifactId>javax.mail</artifactId>
       <version>1.6.2</version>
-      <exclusions>
-        <exclusion>
-          <groupId>*</groupId>
-          <artifactId>*</artifactId>
-        </exclusion>
-      </exclusions>
-    </dependency>
-    <dependency>
-      <groupId>org.springframework</groupId>
-      <artifactId>spring-webmvc</artifactId>
-      <version>5.3.18</version>
       <exclusions>
         <exclusion>
           <groupId>*</groupId>
@@ -2211,9 +2112,9 @@
       </exclusions>
     </dependency>
     <dependency>
-      <groupId>org.springframework</groupId>
-      <artifactId>spring-websocket</artifactId>
-      <version>5.3.18</version>
+      <groupId>xml-apis</groupId>
+      <artifactId>xml-apis-ext</artifactId>
+      <version>1.3.04</version>
       <exclusions>
         <exclusion>
           <groupId>*</groupId>
@@ -2222,9 +2123,9 @@
       </exclusions>
     </dependency>
     <dependency>
-      <groupId>xml-apis</groupId>
-      <artifactId>xml-apis-ext</artifactId>
-      <version>1.3.04</version>
+      <groupId>io.dropwizard.metrics</groupId>
+      <artifactId>metrics-core</artifactId>
+      <version>4.2.9</version>
       <exclusions>
         <exclusion>
           <groupId>*</groupId>
@@ -2244,9 +2145,9 @@
       </exclusions>
     </dependency>
     <dependency>
-      <groupId>org.springframework</groupId>
-      <artifactId>spring-expression</artifactId>
-      <version>5.3.18</version>
+      <groupId>com.github.virtuald</groupId>
+      <artifactId>curvesapi</artifactId>
+      <version>1.04</version>
       <exclusions>
         <exclusion>
           <groupId>*</groupId>
@@ -2255,9 +2156,9 @@
       </exclusions>
     </dependency>
     <dependency>
-      <groupId>com.github.virtuald</groupId>
-      <artifactId>curvesapi</artifactId>
-      <version>1.04</version>
+      <groupId>org.opensaml</groupId>
+      <artifactId>opensaml-soap-impl</artifactId>
+      <version>3.3.0</version>
       <exclusions>
         <exclusion>
           <groupId>*</groupId>
@@ -2280,17 +2181,6 @@
       <groupId>io.netty</groupId>
       <artifactId>netty-codec</artifactId>
       <version>4.1.75.Final</version>
-      <exclusions>
-        <exclusion>
-          <groupId>*</groupId>
-          <artifactId>*</artifactId>
-        </exclusion>
-      </exclusions>
-    </dependency>
-    <dependency>
-      <groupId>com.google.code.gson</groupId>
-      <artifactId>gson</artifactId>
-      <version>2.8.9</version>
       <exclusions>
         <exclusion>
           <groupId>*</groupId>
@@ -2379,39 +2269,6 @@
       <groupId>com.fasterxml.jackson.datatype</groupId>
       <artifactId>jackson-datatype-jdk8</artifactId>
       <version>2.13.2</version>
-      <exclusions>
-        <exclusion>
-          <groupId>*</groupId>
-          <artifactId>*</artifactId>
-        </exclusion>
-      </exclusions>
-    </dependency>
-    <dependency>
-        <groupId>commons-logging</groupId>
-        <artifactId>commons-logging</artifactId>
-        <version>1.1.1</version>
-      <exclusions>
-        <exclusion>
-          <groupId>*</groupId>
-          <artifactId>*</artifactId>
-        </exclusion>
-      </exclusions>
-    </dependency>
-    <dependency>
-      <groupId>commons-io</groupId>
-      <artifactId>commons-io</artifactId>
-      <version>2.8.0</version>
-      <exclusions>
-        <exclusion>
-          <groupId>*</groupId>
-          <artifactId>*</artifactId>
-        </exclusion>
-      </exclusions>
-    </dependency>
-    <dependency>
-      <groupId>org.apache.xmlgraphics</groupId>
-      <artifactId>xmlgraphics-commons</artifactId>
-      <version>2.6</version>
       <exclusions>
         <exclusion>
           <groupId>*</groupId>
