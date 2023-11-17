@@ -387,7 +387,7 @@
     <dependency>
       <groupId>org.apache.xmlgraphics</groupId>
       <artifactId>batik-shared-resources</artifactId>
-      <version>1.14</version>
+      <version>1.17</version>
       <exclusions>
         <exclusion>
           <groupId>*</groupId>
